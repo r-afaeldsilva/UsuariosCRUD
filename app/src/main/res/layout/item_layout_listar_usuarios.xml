@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="#1C8ABC"
+    android:paddingBottom="8dp">
+
+    <TextView
+        android:id="@+id/tv_listar_titulo_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Nome:"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_listar_titulo_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Email:"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_listar_titulo_nome"
+        app:layout_constraintTop_toBottomOf="@+id/tv_listar_titulo_nome" />
+
+    <TextView
+        android:id="@+id/tv_listar_titulo_telefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Telefone:"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_listar_titulo_email"
+        app:layout_constraintTop_toBottomOf="@+id/tv_listar_titulo_email" />
+
+    <TextView
+        android:id="@+id/tv_listar_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_listar_titulo_nome"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Rafael Silva" />
+
+    <TextView
+        android:id="@+id/tv_listar_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_listar_titulo_email"
+        app:layout_constraintStart_toStartOf="@+id/tv_listar_nome"
+        tools:text="rafael@gmail.com" />
+
+    <TextView
+        android:id="@+id/tv_listar_telefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_listar_titulo_telefone"
+        app:layout_constraintStart_toStartOf="@+id/tv_listar_email"
+        tools:text="349999999" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

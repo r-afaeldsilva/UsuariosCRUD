@@ -18,7 +18,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.menu_main, menu)
         return true
     }
@@ -26,14 +25,7 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
         return when (item.itemId) {
-            R.id.action_alteracao_usuario ->{
-                startActivity(Intent(this, AlteracaoDeUsuarioActivity::class.java))
-                true
-            }
-            R.id.action_excluir_usuario -> {
-                startActivity(Intent(this, ExcluirUsuarioActivity::class.java))
-                true
-            }R.id.action_login -> {
+            R.id.action_login -> {
                 startActivity(Intent(this, LoginActivity::class.java))
                 true
             }R.id.action_cadastro_de_usuario-> {

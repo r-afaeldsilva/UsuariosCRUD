@@ -36,7 +36,7 @@ class ListaUsuarioActivity : AppCompatActivity() {
                 response: Response<List<DtoUser?>?>
             ) {
                 recycler = findViewById((R.id.recycle))
-                adapter = ListaUsuarioAdapter(response.body() as List<DtoUser>?, this@ListaUsuarioActivity)
+                adapter = ListaUsuarioAdapter(this@ListaUsuarioActivity, response.body() as List<DtoUser>?)
                 recycler?.layoutManager = LinearLayoutManager(this@ListaUsuarioActivity)
                 recycler?.adapter = adapter
             }

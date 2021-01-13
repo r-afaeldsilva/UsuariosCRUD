@@ -3,10 +3,7 @@ package com.example.usuarioscrud.services
 import com.example.usuarioscrud.dto.DtoLogin
 import com.example.usuarioscrud.dto.DtoUser
 import retrofit2.Call
-import retrofit2.http.Body
-import retrofit2.http.GET
-import retrofit2.http.Header
-import retrofit2.http.POST
+import retrofit2.http.*
 
 
 interface EndPoint {
@@ -18,4 +15,7 @@ interface EndPoint {
 
     @GET("users")
     fun getDtoListUser(@Header("Authorization") authorization: String?): Call<List<DtoUser?>?>?
+
+    @PUT("users/{id}")
+    fun putDtoUser(@Body user: DtoUser, @Path("id") id: Int, @Header("Authorization") authorization: String?): Call<Void>
 }

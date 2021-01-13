@@ -24,7 +24,7 @@ class CadastroDeUsuarioActivity : AppCompatActivity() {
         val emailUsuario = findViewById<TextView>(R.id.et_cadastro_usuario_email)
         val senhaUsuario = findViewById<TextView>(R.id.et_cadastro_usuario_senha)
         val phoneUsuario = findViewById<TextView>(R.id.et_cadastro_usuario_telefone)
-        val usuario = DtoUser(emailUsuario.text.toString(), nomeUsuario.text.toString(), phoneUsuario.text.toString(), senhaUsuario.text.toString())
+        val usuario = DtoUser(email = emailUsuario.text.toString(), name =  nomeUsuario.text.toString(), phone = phoneUsuario.text.toString(), password = senhaUsuario.text.toString())
 
         nomeUsuario.text  =""
         emailUsuario.text =""
